@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade02 da aula 11 de CSS</title>
+    <style>
+
+    div.informacoes {
+        height: 200px;
+        width: 200px;
+        position:relative;
+        border-radius: 100px;
+        background-color: yellow;
+        color: #00000000;
+    }
+
+    div.informacoes:hover {
+        height: 200px;
+        width: 300px;
+        border-radius: 15px;
+        padding: 10px;
+        color: black;
+        transition-property: height, width, border-radius, padding, color;
+        transition-delay: 0s, 0s, 0s, 0s, 1s;
+        transition-duration: 1s, 1s, 1s, 1s, 0.2s;
+        transition-timing-function: ease;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="informacoes">
+        <div>
+            <h1>Título do produto</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+</body>
+</html>

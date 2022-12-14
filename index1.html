@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade01 da aula 11 de CSS</title>
+
+    <style>
+
+    button.main_button {
+        padding: 5px;
+        background-color: #0F0C33;
+        color: #FFF;
+    }
+
+    @keyframes mexe_botao {
+        0% {
+            transform: rotate(0deg);
+        } 50% {
+            transform: rotate(15deg);
+        } 100% {
+            transform: rotate(-15deg);
+        }
+    }
+
+    .main_button:hover {
+        animation-name: mexe_botao;
+        animation-duration: 0.5s;
+        animation-fill-mode: backwards;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <button class="main_button">Logar</button>
+    </div>
+
+</body>
+</html>
